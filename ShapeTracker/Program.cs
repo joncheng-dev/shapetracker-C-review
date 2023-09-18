@@ -1,8 +1,15 @@
-// User Interface Logic
-class Program 
-{
-  static void Main()
-  {
+using System;
+using ShapeTracker.Models;
 
-  }
+// User Interface Logic
+namespace ShapeTracker 
+{
+  class Program 
+  {
+    static void Main()
+    {
+      Triangle testTriangle = new Triangle();
+      Console.WriteLine(testTriangle.GetType());
+    }
+  }  
 }
