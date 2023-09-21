@@ -28,8 +28,8 @@ namespace ShapeTracker
     static void ConfirmOrEditTriangle(Triangle instance)
     {
       Console.WriteLine("Please confirm that your triangle's side are correct.");
-      Console.WriteLine($"Side1 has a length of {instance.GetSide1()}");
-      Console.WriteLine($"Side2 has a length of {instance.GetSide2()}");
+      Console.WriteLine($"Side1 has a length of {instance.Side1}");
+      Console.WriteLine($"Side2 has a length of {instance.Side2}");
       Console.WriteLine($"Side3 has a length of {instance.GetSide3()}");
       Console.WriteLine("If correct, enter 'yes'. If incorrect, enter 'no'.");
       string userResponse = Console.ReadLine();
@@ -48,8 +48,8 @@ namespace ShapeTracker
         Console.WriteLine("Please enter side3:");
         string stringReenterSide3 = Console.ReadLine();
 
-        instance.SetSide1(int.Parse(stringReenterSide1));
-        instance.SetSide2(int.Parse(stringReenterSide2));
+        instance.Side1 = int.Parse(stringReenterSide1);
+        instance.Side2 = int.Parse(stringReenterSide2);
         instance.SetSide3(int.Parse(stringReenterSide3));
         ConfirmOrEditTriangle(instance);                
       }
