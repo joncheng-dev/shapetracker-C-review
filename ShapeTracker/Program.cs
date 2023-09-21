@@ -59,6 +59,18 @@ namespace ShapeTracker
     {
       string result = instance.CheckType();
       Console.WriteLine($"Your triangle is: {result}.");
+      Console.WriteLine("What would you like to do now?");
+      Console.WriteLine("Please enter 'new' to check a new triangle.");
+      string userResponse = Console.ReadLine();
+
+      if (userResponse == "new" || userResponse == "New")
+      {
+        Main();
+      }
+      else
+      {
+        Console.WriteLine("Goodbye.");
+      }
     }
   }  
 }
